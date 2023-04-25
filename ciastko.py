@@ -61,5 +61,4 @@ if planeta_numer == 6:
 if planeta_numer == 7:
     planeta_tekst = "Neptun"
 
-print(
-    f"Twoja wróżba na dziś to: {wrozba_tekst} Twój szczęśliwy numer to {szczesliwy_numer}. Twoja szczęśliwa planeta to {planeta_tekst}. ")
+print(f"Twoja wróżba na dziś to: {wrozba_tekst} Twój szczęśliwy numer to {szczesliwy_numer}. Twoja szczęśliwa planeta to {planeta_tekst}. ")
