@@ -8,7 +8,8 @@ print(intro)
 
 def dodawanie(x,y): 
     z = x + y 
-    print(z) 
+    print(z)
+    
 
 def odejmowanie(x,y): 
     z = x - y 
@@ -19,12 +20,12 @@ def mnozenie(x,y):
     print(z) 
 
 def dzielenie(x,y): 
-    if y != 0:
+    try:
         z = x / y 
         print(z)
-    else: 
-        print("Nie można dzielić przez zero")
-
+    except ZeroDivisionError as e:
+        print("Nie można dzielić przez zero!")
+    
 def potega(x,y): 
     z = x ** y 
     print(z) 
@@ -40,47 +41,71 @@ def cosinus(x):
 def tangens(x): 
     z = math.tan(x)
     print(z) 
-
-
     
-wybor = input("Wybierz swoje działanie: ")
+while True:
+    wybor = input("Wybierz swoje działanie: ")
+    if wybor.lower() in ['d', 'o', 'm', 'dz', 'p', 'sin', 'cos', 'tan']:
+        break
+    else:
+        print("Nieprawidłowy wybór. Spróbuj ponownie.")
 
 if wybor.lower() == 'd': 
-    a = int(input('Wpisz pierwszą liczbę'))
-    b = int(input('Wpisz drugą liczbę'))
-    dodawanie(a,b)
+    try:
+        a = int(input('Wpisz pierwszą liczbę'))
+        b = int(input('Wpisz drugą liczbę'))
+        dodawanie(a,b)
+    except ValueError as e:
+        print("Podaj odpowiednią wartość liczbową!")
     
 elif wybor.lower() == 'o': 
-    a = int(input('Wpisz liczbę, od której chcesz odjąć'))
-    b = int(input('Wpisz liczbę, którą chcesz odjąc od pierwszej'))
-    odejmowanie(a,b)
+    try:
+        a = int(input('Wpisz liczbę, od której chcesz odjąć'))
+        b = int(input('Wpisz liczbę, którą chcesz odjąc od pierwszej'))
+        odejmowanie(a,b)
+    except ValueError as e:
+        print("Podaj odpowiednią wartość liczbową!")
     
 elif wybor.lower() == 'm': 
-    a = int(input('Wpisz pierwszą liczbę'))
-    b = int(input('Wpisz drugą liczbę'))
-    mnozenie(a,b)
+    try:
+        a = int(input('Wpisz pierwszą liczbę'))
+        b = int(input('Wpisz drugą liczbę'))
+        mnozenie(a,b)
+    except ValueError as e:
+        print("Podaj odpowiednią wartość liczbową!")
     
 elif wybor.lower() == 'dz': 
-    a = int(input('Wpisz liczbę, którą chcesz dzielić'))
-    b = int(input('Wpisz liczbę, przez którą chcesz dzielić'))
-    dzielenie(a,b)
+    try:
+        a = int(input('Wpisz liczbę, którą chcesz dzielić'))
+        b = int(input('Wpisz liczbę, przez którą chcesz dzielić'))
+        dzielenie(a,b)
+    except ValueError as e:
+        print("Podaj odpowiednią wartość liczbową!")
     
 elif wybor.lower() == 'p': 
-    a = int(input('Wpisz podstawę potęgi'))
-    b = int(input('Wpisz potęgę'))
-    potega(a,b)
+    try:
+        a = int(input('Wpisz podstawę potęgi'))
+        b = int(input('Wpisz potęgę'))
+        potega(a,b)
+    except ValueError as e:
+        print("Podaj odpowiednią wartość liczbową!")
     
 elif wybor.lower() == 'sin': 
-    a = int(input('Wpisz liczbę'))
-    sinus(a)
+    try:
+        a = float(input('Wpisz liczbę'))
+        sinus(a)
+    except ValueError as e:
+        print("Podaj odpowiednią wartość liczbową!")
     
 elif wybor.lower() == 'cos': 
-    a = int(input('Wpisz liczbę'))
-    cosinus(a)
+    try:
+        a = float(input('Wpisz liczbę'))
+        cosinus(a)
+    except ValueError as e:
+        print("Podaj odpowiednią wartość liczbową!")
     
-elif wybor.lower() == 'tan': 
-    a = int(input('Wpisz liczbę'))
-    tangens(a)
-    
-else: 
-    print('Wpisz poprawny tekst')
+else wybor.lower() == 'tan': 
+    try:
+        a = float(input('Wpisz liczbę'))
+        tangens(a)
+    except ValueError as e:
+        print("Podaj odpowiednią wartość liczbową!")
