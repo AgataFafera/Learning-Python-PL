@@ -51,18 +51,18 @@ while True:
         print("Nieprawidłowy wybór. Spróbuj ponownie.")
 
 #wywołanie odpowiedniej funkcji, zaprezentowanie hasła
-if wybor == 'l':
+if wybor.lower() == 'l':
     haslo = litery(dlugosc)
     print("Oto twoje hasło: ", haslo)
     
-elif wybor == 'c':
+elif wybor.lower() == 'c':
     haslo = cyfry(dlugosc)
     print("Oto twoje hasło: ", haslo)
     
-elif wybor == 'lic':
+elif wybor.lower() == 'lic':
     haslo = litery_cyfry(dlugosc)
     print("Oto twoje hasło: ", haslo)
     
-elif wybor == 'w':
+elif wybor.lower() == 'w':
     haslo = litery_cyfry_znaki(dlugosc)
     print("Oto twoje hasło: ", haslo)
