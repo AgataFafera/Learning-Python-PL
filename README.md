@@ -5,3 +5,4 @@ Zawiera:
 2) Prosty kalkulator zawierający dodwanie, odejmowanie, mnożenie, dzielenie, potęgowanie, sinus, cosinus, tangens. [kalkulator.py]
 3) Prostą tekstową grę RPG w której gracz podejmuje własne decyzje. [rpg_gra.py]
 4) Prosty generator haseł, w którym można wybrać długość hasła, oraz czy zawiera: litery, cyfry, znaki specjalne. [hasła.py]
+5) Funkcję obliczającą pole i obwód koła o danym promieniu. [pole_obwod_kola.py]
