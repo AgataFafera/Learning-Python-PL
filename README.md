@@ -7,3 +7,4 @@ Zawiera:
 4) Prosty generator haseł, w którym można wybrać długość hasła, oraz czy zawiera: litery, cyfry, znaki specjalne. [hasła.py]
 5) Funkcję obliczającą pole i obwód koła o danym promieniu. [pole_obwod_kola.py]
 6) Funkcję znajdującą rozwiązania równania kwadratowego po podaniu jego współczynników. [rownanie_kwadratowe.py]
+7) Program obliczający jaka prędkość jest potrzebna, by satelita oddalona o dany promień od środka Ziemi utrzymała się na orbicie. [predkosc_orbitalna.py]
