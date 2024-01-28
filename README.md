@@ -10,3 +10,4 @@ Zawiera:
 7) Program obliczający jaka prędkość jest potrzebna, by satelita oddalona o dany promień od środka Ziemi utrzymała się na orbicie. [predkosc_orbitalna.py]
 8) Program generujący wykrez paraboli po podaniu współczynników równania kwadratowego. [parabole.py]
 9) Sito Eratostenesa. Użytkownik wprowadza liczbę n, a program generuje wszystkie pierwsze liczby w przedziale <2,n). [sito.py]
+10) Notatnik pozwalający przechowywać przepisy oraz losować pomysł na potrawę z wcześniej stoworzonych przepisów. [notatnik_przepisy.py]
