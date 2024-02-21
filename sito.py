@@ -1,5 +1,5 @@
 #powitanie użytkownika 
-print("Oto sito Eratostenesa, algortym wyznaczanie liczb pierwszych mniejszych od danej liczby. ")
+print("Oto sito Eratostenesa, algortym wyznaczania liczb pierwszych mniejszych od danej liczby. ")
 
 #pobranie liczby
 while True:
